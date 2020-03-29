@@ -62,6 +62,6 @@ $redirectUri .= $returnUrl . '?' . http_build_query([
     'card_expiry_date' => $cardExpiryMonth . $cardExpiryYear,
     'custom_reference' => $customReference,
 ]);
-
-header('Location: ' . $redirectUri);
+echo $redirectUri;
+//header('Location: ' . $redirectUri);
 exit;
